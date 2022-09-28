@@ -35,7 +35,7 @@ int main(void)
 	else                                                 // If you are older than or equal to 20
 	{                                                    // Size is determined according to the value of chest over 20 years old
 		if (chestsize < ADULTMINSIZE)
-		{ 
+		{
 			chestsize = 'S';
 		}
 		else if ((chestsize >= ADULTMINSIZE) && (chestsize < ADULTMAXSIZE))
@@ -48,7 +48,7 @@ int main(void)
 			chestsize = 'L';
 		}
 	}
-	
+
 	printf("Your chestsize is %c", chestsize);                  // input chestsize
 	system("pause");
 	
