@@ -1,5 +1,2 @@
 ﻿  Prob2 .cpp
-C:\Users\LG\Documents\GitHub\Sonyoungjin---2022-\4주차\Prob 2\Prob 2\Prob2 .cpp(17,10): warning C4477: 'scanf_s' : 서식 문자열 '%d'에 'int *' 형식의 인수가 필요하지만 variadic 인수 2의 형식이 'char *'입니다.
-C:\Users\LG\Documents\GitHub\Sonyoungjin---2022-\4주차\Prob 2\Prob 2\Prob2 .cpp(17,10): message : 서식 문자열에서 '%hhd'을(를) 사용하는 것이 좋습니다.
-C:\Users\LG\Documents\GitHub\Sonyoungjin---2022-\4주차\Prob 2\Prob 2\Prob2 .cpp(13,6): warning C4101: 'chest' :참조되지 않은 지역 변수입니다.
   Prob 2.vcxproj -> C:\Users\LG\Documents\GitHub\Sonyoungjin---2022-\4주차\Prob 2\x64\Debug\Prob 2.exe

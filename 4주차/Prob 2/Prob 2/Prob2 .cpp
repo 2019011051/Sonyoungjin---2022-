@@ -13,17 +13,17 @@ int main(void)
 	int chest;                                       // chest variable settings
 	char chestsize;                                  // chestsize variable settings
 	
-	printf("input your age and chestsize:\n");       //  input age and chestsize
-	scanf_s("%d%d", &age, &chestsize);                
+	printf("input your age and chest:");       //  input age and chestsize
+	scanf_s("%d %d", &age, &chest);                
 
 	if (age < agelimit )                             //If you're under 20
 	{                                                //// Size is determined according to the chest value under the age of 20
-		if (chestsize < MINSIZE)                    
+		if (chest < MINSIZE)                    
 		{
 			chestsize = 'S';                        
 		}
 
-		else if ((chestsize >= MINSIZE) && (chestsize < MAXSIZE))  
+		else if ((chest >= MINSIZE) && (chest < MAXSIZE))  
 		{
 			chestsize = 'M';
 		}
@@ -34,11 +34,11 @@ int main(void)
 	}
 	else                                                 // If you are older than or equal to 20
 	{                                                    // Size is determined according to the value of chest over 20 years old
-		if (chestsize < ADULTMINSIZE)
+		if (chest < ADULTMINSIZE)
 		{
 			chestsize = 'S';
 		}
-		else if ((chestsize >= ADULTMINSIZE) && (chestsize < ADULTMAXSIZE))
+		else if ((chest >= ADULTMINSIZE) && (chest < ADULTMAXSIZE))
 		{
 			chestsize = 'M';
 		}
