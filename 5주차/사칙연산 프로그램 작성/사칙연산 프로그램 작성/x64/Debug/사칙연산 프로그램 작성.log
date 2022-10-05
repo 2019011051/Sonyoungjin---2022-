@@ -1,0 +1,3 @@
+﻿  소스.cpp
+C:\Users\LG\Documents\GitHub\Sonyoungjin---2022-\5주차\사칙연산 프로그램 작성\사칙연산 프로그램 작성\소스.cpp(36,6): warning C4101: 'res' :참조되지 않은 지역 변수입니다.
+  사칙연산 프로그램 작성.vcxproj -> C:\Users\LG\Documents\GitHub\Sonyoungjin---2022-\5주차\사칙연산 프로그램 작성\x64\Debug\사칙연산 프로그램 작성.exe
