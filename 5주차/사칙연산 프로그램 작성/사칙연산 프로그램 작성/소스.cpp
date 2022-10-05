@@ -1,38 +1,37 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int sum(int x, int y)
+int sum(int x, int y )       //Declare an addition function
 {
-	int temp;
-	temp = x + y;
-	return temp;
+	int temp;                 // Variable temp
+	temp = x + y;             //Store the sum of x and y in temp
+	return temp;              //Convert the value of the temp
+}
+int sub(int x, int y)        //Declare an subtatction  function
+{
+	int temp;                    // Variable temp
+	temp = x - y;             //Store the sub of x and y in temp
+	return temp;              //Convert the value of the temp
 }
 
-int sub(int x, int y)
+int division(int x, int y)       //Declare an division function
 {
-	int temp;
-	temp = x - y;
-	return temp;
+	int temp;                    // Variable temp
+	temp = x / y;                 //Store the division of x and y in temp
+	return temp;                    //Convert the value of the temp
 }
 
-int division(int x, int y)
+int mult(int x, int y)          //Declare an multipication function
 {
-	int temp;
-	temp = x / y;
-	return temp;
-}
-
-int mult(int x, int y)
-{
-	int temp;
-	temp = x * y;
-	return temp;
+	int temp;                  // Variable temp
+	temp = x * y;              //Store the multipication of x and y in temp
+	return temp;                //Convert the value of the temp
 }
 
 
-int main(void)
+int main(void) 
 {
-	int a, b;
+	int a, b;                                     
 	int res;
 	char arithmeticoperations;
 
