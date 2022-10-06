@@ -2,7 +2,7 @@
 
 int main(void)
 {
-	int Kg;                   //Specify a weight variable
+	int Kg;//Specify a weight variable
 	double m;                 //Height Specify a variable
 	double Bmi;               //Specifying Bmi Variables
 
