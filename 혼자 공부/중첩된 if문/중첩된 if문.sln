@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32901.215
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "중첩된 if문", "중첩된 if문\중첩된 if문.vcxproj", "{7CA4D183-FB44-4167-888D-18DC94D5495F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7CA4D183-FB44-4167-888D-18DC94D5495F}.Debug|x64.ActiveCfg = Debug|x64
+		{7CA4D183-FB44-4167-888D-18DC94D5495F}.Debug|x64.Build.0 = Debug|x64
+		{7CA4D183-FB44-4167-888D-18DC94D5495F}.Debug|x86.ActiveCfg = Debug|Win32
+		{7CA4D183-FB44-4167-888D-18DC94D5495F}.Debug|x86.Build.0 = Debug|Win32
+		{7CA4D183-FB44-4167-888D-18DC94D5495F}.Release|x64.ActiveCfg = Release|x64
+		{7CA4D183-FB44-4167-888D-18DC94D5495F}.Release|x64.Build.0 = Release|x64
+		{7CA4D183-FB44-4167-888D-18DC94D5495F}.Release|x86.ActiveCfg = Release|Win32
+		{7CA4D183-FB44-4167-888D-18DC94D5495F}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {41832AB9-1847-4B4A-BDFF-B1EEAE63514B}
+	EndGlobalSection
+EndGlobal
