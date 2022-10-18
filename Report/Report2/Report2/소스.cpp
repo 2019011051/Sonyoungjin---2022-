@@ -3,29 +3,24 @@
 #include <time.h>
 
 #define END_COND 999
+void GenRandSeed();
+unsigned int GenRandNum(unsigned int nRange); // generating the random number
+int Ran_Num();
+int Average();
 
 
-int averge(void)
+int main(void)
 {
-	int a_number;
-	int nRange[10];
-
-	for (a_number = 0; a_number < 10; a_number++)
-	{
-		nRange[a_number] = rand() % 100;
-	}
-	for (a_number = 0; a_number < 10; a_number++)
-	{
-
-	}
+	Average();
+	return 0;
 }
+
 void GenRandSeed()   // generating the seed number using the time clock information
 {
 
 	srand((unsigned int)(time(NULL)));  // generating the random number using the time seed
 	return;
 }
-
 
 unsigned int GenRandNum(unsigned int nRange) // generating the random number
 {
@@ -35,37 +30,33 @@ unsigned int GenRandNum(unsigned int nRange) // generating the random number
 	return nRes;
 }
 
-int main(void)
+int Ran_Num()
 {
+	GenRandSeed();          // assigning seed
 
-	GenRandSeed();    // assigning seed
-
-
-	int nRange = 0;   // initializing variables
-
-	while (1)
+	int a_number;
+	int nRange[10] = { 0 };
+	int sum = 0;
+	for (a_number = 0; a_number < 10; a_number++)
 	{
-
-		printf("Input a single number, for generating the random number related to your input:\n");  // generating the input information
-		printf("if you want to end the loop, please input 999\n");
-		scanf_s("%d", &nRange);
-
-
-		if (nRange == END_COND)  // escaping the while loop
-		{
-			printf("end of the infinite while loop...\n");
-			break;
-		}
-		else
-		{
-
-			int nRes = GenRandNum(nRange);   // generating the random number
-
-
-			printf("Result:random number generator, %d\n\n", nRes);  // for debugging
-		}
+		nRange[a_number] = rand()%100;
 	}
+	for (a_number = 0; a_number < 10; a_number++)
+	{
+		printf("%4d", nRange[a_number]);
+		sum += nRange[a_number];
+	}
+	return sum;
+}
 
-	system("pause");
+int Average()
+{
+	GenRandSeed();
+	int savesum[10] = {Ran_Num()};
+	int* Psum = &savesum[10];
+	double avg = 0;
+    avg = *Psum /static_cast<double>(10);
+	printf("Average : %lf\n", avg);
 	return 0;
 }
+
