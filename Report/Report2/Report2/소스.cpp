@@ -4,14 +4,21 @@
 
 #define END_COND 999
 
-void GenRandArray()
+
+int averge(void)
 {
+	int a_number;
+	int nRange[10];
 
+	for (a_number = 0; a_number < 10; a_number++)
+	{
+		nRange[a_number] = rand() % 100;
+	}
+	for (a_number = 0; a_number < 10; a_number++)
+	{
+
+	}
 }
-
-
-
-
 void GenRandSeed()   // generating the seed number using the time clock information
 {
 
