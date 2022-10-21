@@ -6,8 +6,6 @@
 
 int Line_up_Program();
 
-
-
 int main(void)
 {
 	int n,i, j, temp = 0;            //변수 선언
