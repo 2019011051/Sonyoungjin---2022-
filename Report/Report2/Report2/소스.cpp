@@ -57,7 +57,7 @@ double Ran_Num()
 	}
 	for (a_number = 0; a_number < 10; a_number++)
 	{
-		printf("%5.0f", nRange[a_number]);              // 무작위 숫자 배열 호출
+		printf("%5.0f", nRange[a_number]);              // 무작위 숫자 배열 출력
         sum += nRange[a_number];                         // 무작위 숫자 배열의 총합 
 		Dis += (nRange[a_number] - Average(sum)) * (nRange[a_number] - Average(sum));   // 무직위 숫자 배열- 평균 의 제곱의 총합
 	}
