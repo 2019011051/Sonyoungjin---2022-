@@ -104,6 +104,7 @@ void Multi_Matrix(int A_nRange[Line_number][Row_number], int B_nRange[Line_numbe
 			}
 			Mult_Matrix[Line][Row] = Mult;
 		}
+
 	}
 	printf("A_Matrix X B_Matrix : ");
 	printf("\n");
