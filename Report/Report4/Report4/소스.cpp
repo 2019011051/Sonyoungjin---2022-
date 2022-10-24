@@ -26,18 +26,19 @@ int main(void)
 	{
 		for (j= i+1; j< Size; j++)
 		{
-			if (*(Number+ i) > *(Number+j))
+			// for문을 돌리면서 배열을 차례대로 비교해주며 정수값을 옮겨주는 문장
+			if (*(Number+ i) > *(Number+j))    
 			{
-				temp = *(Number + i);
-				* (Number + i) = *(Number + j);
-				*(Number + j) = temp;
+				temp = *(Number + i);       // ex) Number[0]값을 temp값에 저장
+				* (Number + i) = *(Number + j);   // ex) Number[1]값을 Number[0]에 저장
+				*(Number + j) = temp;              // 저장받은 temp값을 Number[1]에 저장
 			}
 		}
 	}
 	// 정리한 오름차수 출력하기
 	for (i = 0; i < Size; i++)
 	{
-		printf("오름차수 %d number : %d\n", i, Number[i]);
+		printf("ascending order %d number : %d\n", i, Number[i]);
 	}
 	
 	// 줄띄우기 프로그램 호출
@@ -59,13 +60,13 @@ int main(void)
 	//정리된 내림차수를 출력
 	for (i = 0; i < Size; i++)
 	{
-		printf("내림차수 %d number : %d\n", i, Number[i]);
+		printf("descending %d number : %d\n", i, Number[i]);
 	}
 	return 0;
 }
 
 
-// 줄 띄우기 함수
+
 int Line_up_Program()
 {
 	int Line_up = 0;
@@ -76,7 +77,7 @@ int Line_up_Program()
 	}
 	printf("\n");
 	return 0;
-}
+}  // 줄 띄우기 함수
 void GenRandSeed()   // generating the seed number using the time clock information
 {
 
