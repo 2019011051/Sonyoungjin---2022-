@@ -8,44 +8,44 @@ int Line_up_Program();
 
 int main(void)
 {
-	int n,i, j, temp = 0;            //변수 선언
-	int Number[Size] = { rand() };    //배열안에 무작위 숫자 설정
+	int n,i, j, temp = 0;            //variable declaration
+	int Number[Size] = { rand() };    //Set a random number in an array
 	
-	// 배열1~10까지 출력
+	// Output from Array 1 to 10
 	for (n = 0; n < Size; n++)
 	{
 		Number[n] = rand() % 100;
 		printf("This is %d number : %d\n", n, Number[n]);
 	}  
 
-	//줄 띄우기 프로그램 호출
+	//Call Line Plot Program
 	Line_up_Program();
 
-	// 설정된 배열을 오름차수로 정리하기
+	// To organize a set array in ascending order
 	for (i = 0; i < Size; i++)
 	{
 		for (j= i+1; j< Size; j++)
 		{
-			// for문을 돌리면서 배열을 차례대로 비교해주며 정수값을 옮겨주는 문장
+			// A sentence that moves the integer value by rotating the for statement and comparing the arrangement in order
 			if (*(Number+ i) > *(Number+j))    
 			{
-				temp = *(Number + i);       // ex) Number[0]값을 temp값에 저장
-				* (Number + i) = *(Number + j);   // ex) Number[1]값을 Number[0]에 저장
-				*(Number + j) = temp;              // 저장받은 temp값을 Number[1]에 저장
+				temp = *(Number + i);       // ex) Number[0]값ex) Store the value of Number[0] in the temp value을 temp값에 저장
+				* (Number + i) = *(Number + j);   // ex) Number[1]값을 Number[0]ex) Store the value of Number[1] in Number[0]에 저장
+				*(Number + j) = temp;              // ex) Save the saved temp value to Number[1]
 			}
 		}
 	}
-	// 정리한 오름차수 출력하기
+	// To output a summary of the ascending order
 	for (i = 0; i < Size; i++)
 	{
 		printf("ascending order %d number : %d\n", i, Number[i]);
 	}
-	
-	// 줄띄우기 프로그램 호출
+	// Calling a jump-off program
 	Line_up_Program();
 
-	//설정된 배열을 내림차수로 정리
-	for (i = 0; i < Size; i++)
+	//Organize the set array in descending order        
+
+	for (i = 0; i < Size; i++)        ////Systems such as ascending above
 	{
 		for (j = i + 1; j < Size; j++)
 		{
@@ -57,7 +57,7 @@ int main(void)
 			}
 		}
 	}
-	//정리된 내림차수를 출력
+	//Output organized descending order
 	for (i = 0; i < Size; i++)
 	{
 		printf("descending %d number : %d\n", i, Number[i]);
@@ -66,7 +66,7 @@ int main(void)
 }
 
 
-
+// Line Plot Function
 int Line_up_Program()
 {
 	int Line_up = 0;
@@ -77,7 +77,8 @@ int Line_up_Program()
 	}
 	printf("\n");
 	return 0;
-}  // 줄 띄우기 함수
+} 
+
 void GenRandSeed()   // generating the seed number using the time clock information
 {
 
