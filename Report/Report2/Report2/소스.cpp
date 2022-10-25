@@ -3,22 +3,22 @@
 #include <time.h>
 #include <math.h>
 
-#define Size 10
+#define Size 10  // Array size is 10
 
 
 void GenRandSeed();
 unsigned int GenRandNum(unsigned int nRange); // generating the random numberd
 
-double Ran_Num();               // Ran_Num 함수 선언
+double Ran_Num();               // Ran_Num function declaration
 
-double Average(double sum);          //  평균 구하는 함수 선언
-double Dispersion(double Dis);       // 분산 구하는 함수 선언
+double Average(double sum);          //  Declare a function to be averaged
+double Dispersion(double Dis);       // Declare a function to obtain variance
 
  
 
 int main(void)
 {
-	Ran_Num();                      // Ran_Num 함수 호출
+	Ran_Num();                      // Calling the Ran_Num function
 	return 0;
 }
 
@@ -40,38 +40,38 @@ unsigned int GenRandNum(unsigned int nRange) // generating the random number
 double Ran_Num()
 {
 	GenRandSeed();          // assigning seed
-	double res ,res1 , res2 =0;  // 평균, 분산, 표준편차 저장 변수
-	double sum = 0;              // 합 변수
-	double Dis = 0;              // 분산계산식의 분자 변수
+	double res ,res1 , res2 =0;  // Mean, Variance, Standard Deviation Storage Variables
+	double sum = 0;              // a sum variable
+	double Dis = 0;              // Molecular Variables in Variance Calculations
 	double Disperation=0;
     
 
-    int a_number;                // 배열번호 변수
-	double nRange[Size] = { 0 };      // 무작위 숫자 배열 선언
+    int a_number;                // Array number variable
+	double nRange[Size] = { 0 };      // Declare random number arrangement
 	
 
-	// 무작위 숫자 배열에 차례대로 무작위 숫자 넣기
+	// Putting random numbers in order in a random number array
 	for (a_number = 0; a_number < 10; a_number++)    
 	{
          nRange[a_number] = rand()%100;
 	}
 	for (a_number = 0; a_number < 10; a_number++)
 	{
-		printf("%5.0f", nRange[a_number]);              // 무작위 숫자 배열 출력
-        sum += nRange[a_number];                         // 무작위 숫자 배열의 총합 
-		Dis += (nRange[a_number] - Average(sum)) * (nRange[a_number] - Average(sum));   // 무직위 숫자 배열- 평균 의 제곱의 총합
+		printf("%5.0f", nRange[a_number]);              // Random numeric array output
+        sum += nRange[a_number];                         // Sum of random number arrays
+		Dis += (nRange[a_number] - Average(sum)) * (nRange[a_number] - Average(sum));   // Array of unoccupied numbers - the sum of the squares of the means
 	}
-	res = Average(sum);                                   // 평균함수 호출하여 그 값을 res에 저장
-	res1 =Dispersion(Dis);                                // 분산 함수 호출하여 그 값을 res1에 저장
-	res2 = sqrt(res1);                                    // res1의 값을 제곱근하여 res2에 저장
+	res = Average(sum);                                   // Call the mean function and store the value in res
+	res1 =Dispersion(Dis);                                // Invoke a variance function and store its value in res1
+	res2 = sqrt(res1);                                    // Store the value of res1 in res2 by square root
 	
-	printf("\nAverage : %.2f", res);                      // 평균 값 출력
-  	printf("\nDispersion : % .2f", res1);                 // 분산 값 출력
- 	printf("\nStandard Deviation : %.2f", res2);           // 표준편차 값 출력
+	printf("\nAverage : %.2f", res);                      // Average Value Output
+  	printf("\nDispersion : % .2f", res1);                 // Output Distributed Values
+ 	printf("\nStandard Deviation : %.2f", res2);           // Standard deviation value output
 	return 0;
 }
 
-// 평균 구하는 함수 매개변수 sum
+// function parameter sum obtained by averaging
 double Average(double sum)
 {
 	double avg;
@@ -79,7 +79,7 @@ double Average(double sum)
 	return avg;
 }
 
-// 분산 구하는 함수 매개변수 Dis
+// Variance Obtaining Function Parameters Dis
 double Dispersion(double Dis)
 {
 	double Disperation;
