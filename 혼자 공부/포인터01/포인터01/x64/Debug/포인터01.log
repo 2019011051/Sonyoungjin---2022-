@@ -1,0 +1,3 @@
+﻿  소스.cpp
+C:\Users\LG\Documents\GitHub\Sonyoungjin---2022-\혼자 공부\포인터01\포인터01\소스.cpp(24,9): warning C4475: 'printf' : 길이 한정자 'I'은(는) 서식 지정자에서 형식 필드 문자 'f'과(와) 함께 사용할 수 없습니다.
+  포인터01.vcxproj -> C:\Users\LG\Documents\GitHub\Sonyoungjin---2022-\혼자 공부\포인터01\x64\Debug\포인터01.exe
