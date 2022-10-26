@@ -9,7 +9,7 @@ int Line_up_Program();
 int main(void)
 {
 	int n,i, j, temp = 0;            //variable declaration
-	int Number[Size] = { rand() };    //Set a random number in an array
+	int Number[Size] = { 0 };    //Set a random number in an array
 	
 	// Output from Array 1 to 10
 	for (n = 0; n < Size; n++)
