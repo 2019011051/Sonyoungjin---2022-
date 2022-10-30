@@ -51,11 +51,11 @@ double Ran_Num()
 	
 
 	// Putting random numbers in order in a random number array
-	for (a_number = 0; a_number < 10; a_number++)    
+	for (a_number = 0; a_number < Size; a_number++)    
 	{
          nRange[a_number] = rand()%100;
 	}
-	for (a_number = 0; a_number < 10; a_number++)
+	for (a_number = 0; a_number < Size; a_number++)
 	{
 		printf("%5.0f", nRange[a_number]);              // Random numeric array output
         sum += nRange[a_number];                         // Sum of random number arrays
@@ -75,7 +75,7 @@ double Ran_Num()
 double Average(double sum)
 {
 	double avg;
-    avg = sum /10;
+    avg = sum /Size;
 	return avg;
 }
 
@@ -84,7 +84,7 @@ double Dispersion(double Dis)
 {
 	double Disperation;
 
-	Disperation = Dis / 10;
+	Disperation = Dis / Size;
 
 	return Disperation;
 }
