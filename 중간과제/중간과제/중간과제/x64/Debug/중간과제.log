@@ -1,2 +1,5 @@
 ﻿  소스.cpp
-  중간과제.vcxproj -> C:\Users\LG\Documents\GitHub\Sonyoungjin---2022-\중간과제\중간과제\x64\Debug\중간과제.exe
+C:\Users\LG\Documents\GitHub\Sonyoungjin---2022-\중간과제\중간과제\중간과제\소스.cpp(22,6): warning C4101: 'The_value_of_the_matrix_of_the_solutions_of_each_equation_substituted_in_the_third_column_of_the_matrix_A' :참조되지 않은 지역 변수입니다.
+C:\Users\LG\Documents\GitHub\Sonyoungjin---2022-\중간과제\중간과제\중간과제\소스.cpp(23,8): warning C4101: 'y' :참조되지 않은 지역 변수입니다.
+C:\Users\LG\Documents\GitHub\Sonyoungjin---2022-\중간과제\중간과제\중간과제\소스.cpp(21,6): warning C4101: 'The_value_of_the_matrix_of_the_solutions_of_each_equation_substituted_in_the_second_column_of_the_matrix_A' :참조되지 않은 지역 변수입니다.
+LINK : fatal error LNK1168: C:\Users\LG\Documents\GitHub\Sonyoungjin---2022-\중간과제\중간과제\x64\Debug\중간과제.exe을(를) 쓰기용으로 열 수 없습니다.
