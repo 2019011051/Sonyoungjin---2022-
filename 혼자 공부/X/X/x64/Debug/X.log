@@ -1,0 +1,5 @@
+﻿  소스.cpp
+C:\Users\LG\Documents\GitHub\Sonyoungjin---2022-\혼자 공부\X\X\소스.cpp(22,6): warning C4101: 'The_value_of_the_matrix_of_the_solutions_of_each_equation_substituted_in_the_third_column_of_the_matrix_A' :참조되지 않은 지역 변수입니다.
+C:\Users\LG\Documents\GitHub\Sonyoungjin---2022-\혼자 공부\X\X\소스.cpp(23,9): warning C4101: 'y' :참조되지 않은 지역 변수입니다.
+C:\Users\LG\Documents\GitHub\Sonyoungjin---2022-\혼자 공부\X\X\소스.cpp(21,6): warning C4101: 'The_value_of_the_matrix_of_the_solutions_of_each_equation_substituted_in_the_second_column_of_the_matrix_A' :참조되지 않은 지역 변수입니다.
+  X.vcxproj -> C:\Users\LG\Documents\GitHub\Sonyoungjin---2022-\혼자 공부\X\x64\Debug\X.exe
