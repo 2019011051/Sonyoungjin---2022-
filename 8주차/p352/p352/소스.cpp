@@ -3,16 +3,15 @@
 
 int main(void)
 {
-    char str[30];
-	char str1[5]= {0};
-	
-	strcpy_s(str, "ine");
+    char str[30];           //str배열 선언
+     	
+	strcpy(str, "wine");
 
-	strcat_s(str, "apple");
+	strcat(str, "apple");
 
-	strncpy_s(str1, "pear", 1);
+	strncpy(str, "pear", 1);
 	
-	printf("%s%s, %d\n",str1, str, strlen(str1));
+	printf("%s, %d\n",str, strlen(str));
 	
 	return 0;
 }
