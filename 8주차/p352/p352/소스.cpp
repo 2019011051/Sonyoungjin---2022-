@@ -1,17 +1,19 @@
 #include <stdio.h>
 #include <string.h>
 
+#define Limit 30
+
 int main(void)
 {
-    char str[30];           //str배열 선언
+    char str[Limit];           //declaration of str array
      	
-	strcpy(str, "wine");
+	strcpy(str, "wine");          //Copy "wine" to str array
 
-	strcat(str, "apple");
+	strcat(str, "apple");          //Attach apple to str
 
-	strncpy(str, "pear", 1);
+	strncpy(str, "pear", 1);        // Copy only one character from pear
 	
-	printf("%s, %d\n",str, strlen(str));
+	printf("%s, %d\n",str, strlen(str));     
 	
 	return 0;
 }
