@@ -3,19 +3,26 @@
 
 int main(void)
 {
-	char fruit1[10]= "0";
-	char fruit2[10] = "0";
-	char fruit3[10]=  "0";
+	char fruit[80]={0};
+	char res_fruit[80];
+	char star[20] = "*******";
+	int len=0;
 	
-
-	scanf_s("%s\n", fruit1[10]);
+	printf("단어입력 : ");
+	scanf("%s", fruit);
 	
-	printf("단어입력 : %s\n", fruit1);
-	if (strlen(fruit1) > 5)
+	len = strlen(fruit);
+	if (len<= 5)
 	{
-		strncat_s(fruit1, "*", 1);
+		strcpy(res_fruit, fruit);
 	}
-	printf("입력한 단어 : %s, 생략한 단어 : %s ", fruit1, fruit1);
+	else
+	{
+		strncpy(res_fruit, fruit, 5);
+		res_fruit[5]= '\0';
+		strncat(res_fruit, star, len - 5);
+	}
+	printf("입력한 단어 : %s, 생략한 단어 : %s\n", fruit, res_fruit);
 	
 	return 0;
 
