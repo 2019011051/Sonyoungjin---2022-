@@ -1,0 +1,4 @@
+﻿  소스.cpp
+C:\Users\LG\Documents\GitHub\Sonyoungjin---2022-\9주차\p352\p352\소스.cpp(10,9): warning C4477: 'printf' : 서식 문자열 '%d'에 'int' 형식의 인수가 필요하지만 variadic 인수 2의 형식이 'size_t'입니다.
+C:\Users\LG\Documents\GitHub\Sonyoungjin---2022-\9주차\p352\p352\소스.cpp(10,9): message : 서식 문자열에서 '%zd'을(를) 사용하는 것이 좋습니다.
+  p352.vcxproj -> C:\Users\LG\Documents\GitHub\Sonyoungjin---2022-\9주차\p352\x64\Debug\p352.exe
