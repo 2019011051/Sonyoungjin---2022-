@@ -1,7 +1,7 @@
 ﻿  소스.cpp
-C:\Users\LG\Documents\GitHub\Sonyoungjin---2022-\8주차\P353\P353\소스.cpp(14,21): warning C4267: '=': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\Users\LG\Documents\GitHub\Sonyoungjin---2022-\8주차\P353\P353\소스.cpp(12,2): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Users\LG\Documents\GitHub\Sonyoungjin---2022-\8주차\P353\P353\소스.cpp(17,3): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Users\LG\Documents\GitHub\Sonyoungjin---2022-\8주차\P353\P353\소스.cpp(21,3): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Users\LG\Documents\GitHub\Sonyoungjin---2022-\8주차\P353\P353\소스.cpp(23,3): warning C4996: 'strncat': This function or variable may be unsafe. Consider using strncat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\LG\Documents\GitHub\Sonyoungjin---2022-\8주차\P353\P353\소스.cpp(15,21): warning C4267: '=': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\LG\Documents\GitHub\Sonyoungjin---2022-\8주차\P353\P353\소스.cpp(13,2): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\LG\Documents\GitHub\Sonyoungjin---2022-\8주차\P353\P353\소스.cpp(19,3): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\LG\Documents\GitHub\Sonyoungjin---2022-\8주차\P353\P353\소스.cpp(23,3): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\LG\Documents\GitHub\Sonyoungjin---2022-\8주차\P353\P353\소스.cpp(25,3): warning C4996: 'strncat': This function or variable may be unsafe. Consider using strncat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
   P353.vcxproj -> C:\Users\LG\Documents\GitHub\Sonyoungjin---2022-\8주차\P353\x64\Debug\P353.exe
