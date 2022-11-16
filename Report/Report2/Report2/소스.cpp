@@ -50,7 +50,7 @@ double Ran_Num()
 	double nRange[Size] = { 0 };      // Declare random number arrangement
 	
 
-	// Putting random numbers in order in a random number array
+	// Putting random numbers in order `in a random number array
 	for (a_number = 0; a_number < Size; a_number++)    
 	{
          nRange[a_number] = rand()%100;
