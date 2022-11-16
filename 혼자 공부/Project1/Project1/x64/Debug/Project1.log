@@ -1,0 +1,5 @@
+﻿  소스.cpp
+C:\Users\LG\Documents\GitHub\Sonyoungjin---2022-\혼자 공부\Project1\Project1\소스.cpp(12,27): error C2371: 'c': 재정의. 기본 형식이 다릅니다.
+C:\Users\LG\Documents\GitHub\Sonyoungjin---2022-\혼자 공부\Project1\Project1\소스.cpp(9): message : 'c' 선언을 참조하십시오.
+C:\Users\LG\Documents\GitHub\Sonyoungjin---2022-\혼자 공부\Project1\Project1\소스.cpp(13,8): error C2371: 'direction': 재정의. 기본 형식이 다릅니다.
+C:\Users\LG\Documents\GitHub\Sonyoungjin---2022-\혼자 공부\Project1\Project1\소스.cpp(10): message : 'direction' 선언을 참조하십시오.

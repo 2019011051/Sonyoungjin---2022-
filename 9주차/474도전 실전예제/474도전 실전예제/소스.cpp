@@ -1,49 +1,65 @@
 #include<stdio.h>
 #include<stdlib.h>
 
+#define Zero 0
+
 int main()
 {
-	int number;
-	int* pn;
+	// Setting Variables
+	int num;
+	int* pn;    //Declare the pointer to which the dynamic assignment is to be linked
+
 	int i, j;
-	int count = 0;
+	int count = Zero;
 
-	printf("> 양수 입력 : ");
-	scanf_s("%d", &number);
+	printf("> Positive Input : ");
+	scanf_s("%d", &num);
 
-	pn = (int*)malloc((number - 1) * sizeof(int));
+	//Allocate String Storage
+	pn = (int*)malloc((num - 1) * sizeof(int));
 
-	for (i = 0; i < (number - 1); i++)
+	//Exception handling syntax when out of memory
+	if (pn == NULL)
 	{
-		pn[i] = i + 2;
+		printf("Out of memory!\n");
+		exit(1);
 	}
-	for (i = 0; i < (number - 1); i++)
+	
+	// i is repeated from 0 to num-1
+	for (i = Zero; i < (num - 1); i++)
 	{
-		for (j = 2; j <= number; j++)
+		pn[i] = i + 2 ;          //Store i+2 in a dynamically assigned array 
+	}
+
+	for (i = Zero; i < (num - 1); i++)           
+	{
+		for (j = 2; j <= num; j++)
 		{
-			if ((i + 2 != j) && ((i + 2) % j == 0))
+			if ((i + 2 != j) && ((i + 2) % j == Zero))    //If i + 2 is not equal to j and i + 2 is divided by j and the rest is 0 
 			{
-				pn[i] = 1;
+				pn[i] = 1;  // pn[i] is 1
 			}
 		}
 	}
-	for (i = 0; i < (number - 1); i++)
+
+	for (i = Zero; i < (num - 2); i++)           // I use num-1 to express it up to 29 as shown in the book
 	{
-		if ((count != 0) && (count % 5 == 0))
+		if ((count != Zero) && (count % 5 == Zero))   
 		{
 			printf("\n");
 		}
-		count++;
+		count++;         //Increase count 
 
-		if (pn[i] == 1)
+		if (pn[i] == 1)     //If pn[i] is 1, then x - output
 		{
 			printf("%5c", 'X');
 		}
-		else
-		{
+		else                     
+		{ 
 			printf("%5d", pn[i]);
 		}
 	}
-	free(pn);
+
+	free(pn);   //Return Dynamic Assignment Area
 	return 0;
 }
