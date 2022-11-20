@@ -14,14 +14,15 @@ struct Books
 
 int main(void)
 {
-	struct Books Book_information[3] = {0};
+	struct Books Book_information[3];
 	int i;
 
 	for (i = 0; i < 3; i++)
 	{
 		printf("Enter book %d information: ", i);
-		scanf_s("%s%s%d%d", &(Book_information[i].title), &(Book_information[i].author), &(Book_information[i].page), &(Book_information[i].price));
+		scanf_s("%s%s%d%d\n", (Book_information[i].title), (Book_information[i].author), &(Book_information[i].page), &(Book_information[i].price));
 	}
+	
 	for (i = 0; i < 3; i++)
 	{
 		printf("Book's title : %s\n", Book_information[i].title);
@@ -30,7 +31,5 @@ int main(void)
 		printf("Book's price : %d", Book_information[i].price);
 	}
 
-	
 	return 0;
 }
-

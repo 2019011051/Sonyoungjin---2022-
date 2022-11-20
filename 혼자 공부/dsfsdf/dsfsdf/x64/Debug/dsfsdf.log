@@ -1,0 +1,11 @@
+﻿  소스.cpp
+C:\Users\LG\Documents\GitHub\Sonyoungjin---2022-\혼자 공부\dsfsdf\dsfsdf\소스.cpp(23,11): warning C4477: 'scanf_s' : 서식 문자열 '%s'에 'unsigned int' 형식의 인수가 필요하지만 variadic 인수 2의 형식이 'char *'입니다.
+C:\Users\LG\Documents\GitHub\Sonyoungjin---2022-\혼자 공부\dsfsdf\dsfsdf\소스.cpp(23,11): message : 이 인수는 버퍼 크기로 사용됩니다.
+C:\Users\LG\Documents\GitHub\Sonyoungjin---2022-\혼자 공부\dsfsdf\dsfsdf\소스.cpp(23,11): warning C4477: 'scanf_s' : 서식 문자열 '%s'에 'char *' 형식의 인수가 필요하지만 variadic 인수 3의 형식이 'int *'입니다.
+C:\Users\LG\Documents\GitHub\Sonyoungjin---2022-\혼자 공부\dsfsdf\dsfsdf\소스.cpp(23,11): message : 이 인수는 변환 지정자에서 사용됩니다.
+C:\Users\LG\Documents\GitHub\Sonyoungjin---2022-\혼자 공부\dsfsdf\dsfsdf\소스.cpp(23,11): warning C4477: 'scanf_s' : 서식 문자열 '%s'에 'unsigned int' 형식의 인수가 필요하지만 variadic 인수 4의 형식이 'int *'입니다.
+C:\Users\LG\Documents\GitHub\Sonyoungjin---2022-\혼자 공부\dsfsdf\dsfsdf\소스.cpp(23,11): message : 이 인수는 버퍼 크기로 사용됩니다.
+C:\Users\LG\Documents\GitHub\Sonyoungjin---2022-\혼자 공부\dsfsdf\dsfsdf\소스.cpp(23,11): warning C4473: 'scanf_s': 서식 문자열에 대한 인수가 충분하게 전달되지 않았습니다.
+C:\Users\LG\Documents\GitHub\Sonyoungjin---2022-\혼자 공부\dsfsdf\dsfsdf\소스.cpp(23,11): message : 자리 표시자 및 해당 매개 변수에는 variadic 인수가 6개 필요하지만 4개가 제공되었습니다.
+C:\Users\LG\Documents\GitHub\Sonyoungjin---2022-\혼자 공부\dsfsdf\dsfsdf\소스.cpp(23,11): message : 누락된 variadic 인수 5이(가) 서식 문자열 '%d'에 필요합니다.
+  dsfsdf.vcxproj -> C:\Users\LG\Documents\GitHub\Sonyoungjin---2022-\혼자 공부\dsfsdf\x64\Debug\dsfsdf.exe
