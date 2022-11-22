@@ -6,7 +6,7 @@ typedef struct train Train;    //Overriding the sentence
 struct train           //Declaration of Structure
 {
 	int seats;
-	Train* next;
+	Train* next;               //Can be used as a train because you have overridden the structure train first
 };
 
 int main(void)
@@ -17,12 +17,12 @@ int main(void)
 	{
 		if (head == NULL)
 		{
-			head = tail = (Train*)malloc(sizeof(Train));  
+			head = tail = (Train*)malloc(sizeof(Train));    //After connecting the new structural variables,
 		}
 		else
 		{
-			tail -> next = (Train*)malloc(sizeof(Train));
-			tail = tail -> next;
+			tail -> next = (Train*)malloc(sizeof(Train));      //The tail pointer always remembers the last position in the association list
+			tail = tail -> next;               //Change the value of tail to the last position.
 		}
 	}
 	return 0;
