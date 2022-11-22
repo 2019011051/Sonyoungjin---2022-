@@ -1,0 +1,3 @@
+﻿  소스.cpp
+C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppCommon.targets(1094,5): error MSB6006: "link.exe"이(가) 종료되었습니다(코드: 1168).
+LINK : fatal error LNK1168: C:\Users\LG\Documents\GitHub\Sonyoungjin---2022-\9주차\에델바이스\x64\Debug\에델바이스.exe을(를) 쓰기용으로 열 수 없습니다.
