@@ -1,7 +1,7 @@
 ﻿  소스.cpp
-C:\Users\LG\Documents\GitHub\Sonyoungjin---2022-\9주차\파일경로\파일경로\소스.cpp(14,16): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Users\LG\Documents\GitHub\Sonyoungjin---2022-\9주차\파일경로\파일경로\소스.cpp(26,11): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Users\LG\Documents\GitHub\Sonyoungjin---2022-\9주차\파일경로\파일경로\소스.cpp(37,10): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Users\LG\Documents\GitHub\Sonyoungjin---2022-\9주차\파일경로\파일경로\소스.cpp(43,11): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Users\LG\Documents\GitHub\Sonyoungjin---2022-\9주차\파일경로\파일경로\소스.cpp(16,7): warning C4101: 'ext' :참조되지 않은 지역 변수입니다.
+C:\Users\LG\Documents\GitHub\Sonyoungjin---2022-\9주차\파일경로\파일경로\소스.cpp(13,16): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\LG\Documents\GitHub\Sonyoungjin---2022-\9주차\파일경로\파일경로\소스.cpp(25,11): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\LG\Documents\GitHub\Sonyoungjin---2022-\9주차\파일경로\파일경로\소스.cpp(36,10): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\LG\Documents\GitHub\Sonyoungjin---2022-\9주차\파일경로\파일경로\소스.cpp(42,11): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\LG\Documents\GitHub\Sonyoungjin---2022-\9주차\파일경로\파일경로\소스.cpp(15,7): warning C4101: 'ext' :참조되지 않은 지역 변수입니다.
   파일경로.vcxproj -> C:\Users\LG\Documents\GitHub\Sonyoungjin---2022-\9주차\파일경로\x64\Debug\파일경로.exe
