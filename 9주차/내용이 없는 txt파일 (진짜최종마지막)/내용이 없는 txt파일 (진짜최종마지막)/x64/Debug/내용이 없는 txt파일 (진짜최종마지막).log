@@ -1,0 +1,4 @@
+﻿  소스.cpp
+C:\Users\LG\Documents\GitHub\Sonyoungjin---2022-\9주차\내용이 없는 txt파일 (진짜최종마지막)\내용이 없는 txt파일 (진짜최종마지막)\소스.cpp(23,9): warning C4475: 'printf' : 길이 한정자 'I'은(는) 서식 지정자에서 형식 필드 문자 'f'과(와) 함께 사용할 수 없습니다.
+C:\Users\LG\Documents\GitHub\Sonyoungjin---2022-\9주차\내용이 없는 txt파일 (진짜최종마지막)\내용이 없는 txt파일 (진짜최종마지막)\소스.cpp(24,16): warning C4475: 'fprintf' : 길이 한정자 'I'은(는) 서식 지정자에서 형식 필드 문자 'f'과(와) 함께 사용할 수 없습니다.
+  내용이 없는 txt파일 (진짜최종마지막).vcxproj -> C:\Users\LG\Documents\GitHub\Sonyoungjin---2022-\9주차\내용이 없는 txt파일 (진짜최종마지막)\x64\Debug\내용이 없는 txt파일 (진짜최종마지막).exe

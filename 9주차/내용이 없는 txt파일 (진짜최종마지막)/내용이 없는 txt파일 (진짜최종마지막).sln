@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32901.215
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "내용이 없는 txt파일 (진짜최종마지막)", "내용이 없는 txt파일 (진짜최종마지막)\내용이 없는 txt파일 (진짜최종마지막).vcxproj", "{197E7B8B-F30F-4F83-B282-68C83F83AB40}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{197E7B8B-F30F-4F83-B282-68C83F83AB40}.Debug|x64.ActiveCfg = Debug|x64
+		{197E7B8B-F30F-4F83-B282-68C83F83AB40}.Debug|x64.Build.0 = Debug|x64
+		{197E7B8B-F30F-4F83-B282-68C83F83AB40}.Debug|x86.ActiveCfg = Debug|Win32
+		{197E7B8B-F30F-4F83-B282-68C83F83AB40}.Debug|x86.Build.0 = Debug|Win32
+		{197E7B8B-F30F-4F83-B282-68C83F83AB40}.Release|x64.ActiveCfg = Release|x64
+		{197E7B8B-F30F-4F83-B282-68C83F83AB40}.Release|x64.Build.0 = Release|x64
+		{197E7B8B-F30F-4F83-B282-68C83F83AB40}.Release|x86.ActiveCfg = Release|Win32
+		{197E7B8B-F30F-4F83-B282-68C83F83AB40}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CAC62C88-951F-40D2-BAE4-6D132C173297}
+	EndGlobalSection
+EndGlobal

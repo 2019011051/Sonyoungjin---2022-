@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{ea5d136b-178f-4863-87a1-cf8792bc5bb7}</ProjectGuid>
-    <RootNamespace>내용없는txt파일파일오류로인하여다시만들기</RootNamespace>
+    <ProjectGuid>{197e7b8b-f30f-4f83-b282-68c83f83ab40}</ProjectGuid>
+    <RootNamespace>내용이없는txt파일진짜최종마지막</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
