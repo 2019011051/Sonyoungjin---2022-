@@ -1,22 +1,23 @@
 #include <stdio.h>
 #include <string.h>
 
-struct cracker
+struct cracker                  // Declaration of Structure
 {
-	int price;
+
+	//variable declaration
+	int price;                
 	int calories;
 };
 
 int main(void)
 {
-	struct cracker 바사삭;
-	printf("바사삭의 가격과 열랑을 입력하시오 :\n ");
-	scanf_s("%d%d", &(바사삭.price), &(바사삭.calories));
+	struct cracker crunchy;     //Declare structural variables
+	printf("Enter the price and heat of the crunch :\n ");
+	scanf_s("%d%d", &(crunchy.price), &(crunchy.calories));   //Enter a value in a member
 
-	printf(" 바사삭의 가격 : %d\n", 바사삭.price);
-	printf(" 바사삭의 열량 : %dkcal", 바사삭.calories);
+	printf(" the price of crunch: %d\n", crunchy.price);       //Output input value
+	printf(" the amount of calories that are crunchy : %dkcal", crunchy.calories);
 
 	return 0;
-
 
 }
