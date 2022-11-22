@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{d81070e5-ed16-4392-89a4-8cb5308b2c8b}</ProjectGuid>
-    <RootNamespace>정수실수문자문자열4줄에걸쳐서출력최종</RootNamespace>
+    <ProjectGuid>{ea5d136b-178f-4863-87a1-cf8792bc5bb7}</ProjectGuid>
+    <RootNamespace>내용없는txt파일파일오류로인하여다시만들기</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />

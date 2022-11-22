@@ -1,3 +1,4 @@
 ﻿  소스.cpp
-C:\Users\LG\Documents\GitHub\Sonyoungjin---2022-\9주차\내용이없는 txt파일\내용이없는 txt파일\소스.cpp(10,15): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-  내용이없는 txt파일.vcxproj -> C:\Users\LG\Documents\GitHub\Sonyoungjin---2022-\9주차\내용이없는 txt파일\x64\Debug\내용이없는 txt파일.exe
+C:\Users\LG\Documents\GitHub\Sonyoungjin---2022-\9주차\내용이없는 txt파일\내용이없는 txt파일\소스.cpp(25,16): warning C4475: 'fprintf' : 길이 한정자 'I'은(는) 서식 지정자에서 형식 필드 문자 'f'과(와) 함께 사용할 수 없습니다.
+C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppCommon.targets(1094,5): error MSB6006: "link.exe"이(가) 종료되었습니다(코드: 1168).
+LINK : fatal error LNK1168: C:\Users\LG\Documents\GitHub\Sonyoungjin---2022-\9주차\내용이없는 txt파일\x64\Debug\내용이없는 txt파일.exe을(를) 쓰기용으로 열 수 없습니다.
