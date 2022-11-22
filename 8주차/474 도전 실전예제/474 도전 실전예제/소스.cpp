@@ -4,6 +4,7 @@
 
 int main()
 {
+	//Variable declaration
 	int number;
 	int* pn;
 	int i, j;
@@ -12,13 +13,19 @@ int main()
 	printf("> 양수 입력 : ");
 	scanf_s("%d", &number);
 
+	//Connect pointer after dynamic memory allocation
 	pn = (int*)malloc((number-1)*sizeof(int));
 	
+	//Putting numbers in an array
 	for (i = 0; i < (number - 1); i++)
 	{
 		pn[i] = i + 2;
 	}
-	for (i = 0; i < (number - 1); i++)
+	
+
+	//In order to distinguish between prime and non-minority parts when printing
+	// the non-minority part is designated as 1
+	for (i = 0; i < (number - 1); i++)            
 	{
 		for (j = 2; j <= number; j++)
 		{
@@ -28,13 +35,16 @@ int main()
 			}
 		}
 	}
+	
+	
+	//X in non-minority parts
 	for (i = 0; i < (number - 1); i++)
 	{
-		if ((count != 0) && (count % 5 == 0))
+		if ((count != 0) && (count % 5 == 0)) // If the number is not zero or divided by five, then there is no remainder
 		{
 			printf("\n");
 		}
-		count++;
+		count++;   
 
 		if (pn[i] == 1)
 		{
@@ -45,6 +55,6 @@ int main()
 			printf("%5d", pn[i]);
 		}
 	}
-	free(pn);
+	free(pn);         //Return Dynamic Assignment Area
 	return 0;
 }
