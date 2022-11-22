@@ -1,24 +1,23 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+
 
 int main(void)
 {
-	FILE* input_file,*output_file ;
-	
+
+	FILE* oufile;
+
 	int integer;
 	double real_number;
 	char character;
 	char string[20];
 	int res;
-
-	input_file = fopen("a.txt", "r");
-	if (input_file == NULL)
-	{
-		printf("File did not open/\n ");
-		return 1;
-	}
+	
 	
 	output_file = fopen("b.txt", "w");
-	if (input_file == NULL)
+	if (output_file == NULL)
 	{
 		printf("File did not open/\n ");
 		return 1;
@@ -26,16 +25,15 @@ int main(void)
 
 	while (1)
 	{
-		res = fscanf(input_file, "%5d %7.If %c %s", &integer, &real_number, &character, string);
+		res = fscanf(output_file, "%5d %7.If %5c %5s", &integer, &real_number, &character, string);
 		if (res == EOF)
 		{
 			break;
 		}
-		fprintf(output_file, "%5d %7.If %c %s\n", integer, real_number, character, string);
-
+		fprintf(output_file, "%5d %7.If %5c %5s", integer, real_number, character, string);
 	}
 	
-	fclose(input_file);
+	
 	fclose(output_file);
 
 	return 0;

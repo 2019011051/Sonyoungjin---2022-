@@ -1,0 +1,2 @@
+﻿  소스.cpp
+C:\Users\LG\Documents\GitHub\Sonyoungjin---2022-\9주차\정수 실수 문자 문자열 4줄에 걸쳐서 출력 (최종)\정수 실수 문자 문자열 4줄에 걸쳐서 출력 (최종)\소스.cpp(10,15): error C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
