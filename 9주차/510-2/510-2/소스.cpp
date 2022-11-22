@@ -1,9 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-typedef struct train Train;
+typedef struct train Train;    //Overriding the sentence
 
-struct train
+struct train           //Declaration of Structure
 {
 	int seats;
 	Train* next;
@@ -11,13 +11,13 @@ struct train
 
 int main(void)
 {
-	Train* head = NULL, * tail = NULL;
+	Train* head = NULL, * tail = NULL;      //Head Pointer Initialization
 	int i;
-	for (i = 0; i < 5; i++)
+	for (i = 0; i < 5; i++)                     
 	{
 		if (head == NULL)
 		{
-			head = tail = (Train*)malloc(sizeof(Train));
+			head = tail = (Train*)malloc(sizeof(Train));  
 		}
 		else
 		{
