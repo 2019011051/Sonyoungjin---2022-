@@ -1,7 +1,9 @@
 #include<Servo.h>
 
+//Servomotor use
 Servo servo;
 
+//Variable declaration
 int value =0;
 int redpin = 5;
 int greenpin = 4;
@@ -12,9 +14,9 @@ int Delay = 50;
 
 void setup()
 {
-   servo.attach(7);
+   servo.attach(7);     //Servomotor is number 7
   
-  pinMode(redpin, OUTPUT);
+  pinMode(redpin, OUTPUT);  
   pinMode(greenpin, OUTPUT);
   pinMode(yellowpin, OUTPUT);
   Serial.begin(9600);
@@ -26,31 +28,31 @@ void loop()
   
   if(Serial.available())
   {
-    char input;
+    char input; 
     input = Serial.read();
     
-    if(input == '1')
+    if(input == '1')   //1 input
     {
-      value += 30;
+      value += 30;     //It rotates by 30 degrees
       
-      if(value == 180)
+      if(value == 180)  //Initialize to zero if you fill 180 degrees
         value=0;
     }
       else
       {
-        value = 0;
+        value = 0;      
       }
     
     servo.write(value);
     
-    if(value ==30)
+    if(value ==30)         // If the angle is 30,
     {
-      digitalWrite(redpin, HIGH);
+      digitalWrite(redpin, HIGH);    
       Serial.print("RedLED : on\n");
-      delay(readValue);
+      delay(readValue);  // Wait for 500 millisecond(s)
       digitalWrite(redpin, LOW);
       Serial.print("RedLED : off\n");
-      delay(readValue);
+      delay(readValue);    // Wait for 1000 millisecond(s)
       
       digitalWrite(greenpin, HIGH);
       Serial.print("greenLED : on\n");
@@ -60,7 +62,7 @@ void loop()
       delay(readValue);
     }
     
-    if(value ==60)
+    if(value ==60)       // // If the angle is 60
     {
       
       digitalWrite(bluepin, HIGH);
@@ -78,7 +80,7 @@ void loop()
       delay(readValue);
     }
     
-    if(value == 90)
+    if(value == 90)           // // If the angle is 90
     {
       digitalWrite(redpin, HIGH);
       Serial.print("RedLED : on\n");
@@ -95,7 +97,7 @@ void loop()
       delay(readValue);
     }
     
-    if(value== 120)
+    if(value== 120)          // // If the angle is 120
     {
       digitalWrite(greenpin, HIGH);
       Serial.print("greenLED : on\n");
@@ -112,7 +114,7 @@ void loop()
       delay(readValue);
     }
     
-    if(value == 150)
+    if(value == 150)          // // If the angle is 150
     {
       
       digitalWrite(greenpin, HIGH);
