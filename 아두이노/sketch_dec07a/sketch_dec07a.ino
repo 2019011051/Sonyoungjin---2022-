@@ -1,136 +1,74 @@
-#include<Servo.h>
+#include <Adafruit_NeoPixel.h>  //Loading Library Files to Implement NeoPixels
 
-//Servomotor use
-Servo servo;
+#define PIN 2   // input pin Neopixel is attached to
 
-//Variable declaration
+#define NUMPIXELS      40 // number of neopixels in strip
+
+Adafruit_NeoPixel pixels = Adafruit_NeoPixel(NUMPIXELS, PIN, NEO_GRB + NEO_KHZ800);
+
+
+//Setting Variables
+int redColor = 0;
+int greenColor = 0;
+int blueColor = 0;
 int value = 0;
-int redpin = 5;
-int greenpin = 4;
-int bluepin = 3;
-int yellowpin = 2;
+int sensorpin = 13;
+int pirstate = LOW;
+int delayval = 10; // timing delay in milliseconds
 
-int Delay = 50;
 
-void setup()
+void setup() 
 {
-  servo.attach(7);     //Servomotor is number 7
-
-  pinMode(redpin, OUTPUT);
-  pinMode(greenpin, OUTPUT);
-  pinMode(yellowpin, OUTPUT);
+  
+  pinMode(sensorpin, INPUT);  //PIR sensor pin to INPUT
   Serial.begin(9600);
+  pixels.begin();  // Initialize the NeoPixel library.
 }
 
-void loop()
+void loop() 
 {
-  int readValue = analogRead(A0);
-
-  if (Serial.available())
+  int cds = analogRead(A0);    //Connect the illumination sensor to the analogRead (A0)
+  
+  setColor();                  //Call up color functions to enter neo fixel
+  
+  value = digitalRead(sensorpin);     
+ 
+  
+  if(cds>500 && value==HIGH)        //If the illumination sensor receives a high value by detecting light and movement of 500 or more,
   {
-    char input;
-    input = Serial.read();
-
-    if (input == '1')  //1 input
+    
+    for (int i=0; i < NUMPIXELS; i++)   // Neo Pixel's led, 40 lights in order
     {
-      value += 30;     //It rotates by 30 degrees
+     pixels.setPixelColor(i, pixels.Color(redColor, greenColor, blueColor)); // pixels.Color taks RGB values, from 0,0,0 up to 255,255,255
+     pixels.show(); // This sends the updated pixel color to the hardware
+     delay(delayval); // Delay for a period of time (in milliseconds).
+     
+      if (pirstate==LOW)
+      {
+        Serial.println("Car motion has been detected.");
+        pirstate == HIGH;
+      }
 
-      if (value == 180) //Initialize to zero if you fill 180 degrees
-        value = 0;
-    }
-    else
-    {
-      value = 0;
-    }
-
-    servo.write(value);
-
-    if (value == 30)       // If the angle is 30,
-    {
-      digitalWrite(redpin, HIGH);
-      Serial.print("RedLED : on\n");
-      delay(readValue);  // Wait for 500 millisecond(s)
-      digitalWrite(redpin, LOW);
-      Serial.print("RedLED : off\n");
-      delay(readValue);    // Wait for 1000 millisecond(s)
-
-      digitalWrite(greenpin, HIGH);
-      Serial.print("greenLED : on\n");
-      delay(readValue);
-      digitalWrite(greenpin, LOW);
-      Serial.print("greenLED : off\n");
-      delay(readValue);
-    }
-
-    if (value == 60)     // // If the angle is 60
-    {
-
-      digitalWrite(bluepin, HIGH);
-      Serial.print("blueLED : on\n");
-      delay(readValue);
-      digitalWrite(bluepin, LOW);
-      Serial.print("blueLED : off\n");
-      delay(readValue);
-
-      digitalWrite(yellowpin, HIGH);
-      Serial.print("yellowLED : on\n");
-      delay(readValue);
-      digitalWrite(yellowpin, LOW);
-      Serial.print("yellowLED : off\n");
-      delay(readValue);
-    }
-
-    if (value == 90)          // // If the angle is 90
-    {
-      digitalWrite(redpin, HIGH);
-      Serial.print("RedLED : on\n");
-      delay(readValue);
-      digitalWrite(redpin, LOW);
-      Serial.print("RedLED : off\n");
-      delay(readValue);
-
-      digitalWrite(bluepin, HIGH);
-      Serial.print("blueLED : on\n");
-      delay(readValue);
-      digitalWrite(bluepin, LOW);
-      Serial.print("blueLED : off\n");
-      delay(readValue);
-    }
-
-    if (value == 120)        // // If the angle is 120
-    {
-      digitalWrite(greenpin, HIGH);
-      Serial.print("greenLED : on\n");
-      delay(readValue);
-      digitalWrite(greenpin, LOW);
-      Serial.print("greenLED : off\n");
-      delay(readValue);
-
-      digitalWrite(yellowpin, HIGH);
-      Serial.print("yellowLED : on\n");
-      delay(readValue);
-      digitalWrite(yellowpin, LOW);
-      Serial.print("yellowLED : off\n");
-      delay(readValue);
-    }
-
-    if (value == 150)         // // If the angle is 150
-    {
-
-      digitalWrite(greenpin, HIGH);
-      Serial.print("greenLED : on\n");
-      delay(readValue);
-      digitalWrite(greenpin, LOW);
-      Serial.print("greenLED : off\n");
-      delay(readValue);
-
-
-      digitalWrite(bluepin, HIGH);
-      Serial.print("blueLED : on\n");
-      delay(readValue);
-      digitalWrite(bluepin, LOW);
-      Serial.print("blueLED : off\n");
-      delay(readValue);
     }
   }
+  else
+  {
+    for(int i=0; i< NUMPIXELS; i++)
+    {
+      pixels.setPixelColor(i, pixels.Color(0,0,0));  //If the above conditions are not met, add 0,0,0 to the led RGB to prevent light from coming out
+      pixels.show();
+    }
+    
+    delay(delayval);
+  }
+  
+}
+
+
+
+void setColor() // setcolor function, Select any value to set for RGB
+{
+  redColor = random(0, 255);
+  greenColor = random(0,255);
+  blueColor = random(0, 255);
 }
